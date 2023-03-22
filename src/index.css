@@ -61,6 +61,10 @@ body {
 }
 
 .chatbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
   flex: 1;
   background-color: #343541;
   position: relative;
@@ -68,7 +72,7 @@ body {
 
 .chat-input-holder {
   padding: 24px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   left: 0;
   right: 0;
@@ -131,30 +135,42 @@ body {
 }
 
 .avatar-img {
+  width: 40px;
   height: 50%;
 }
 
 .avatar-img.bot {
+  width: 40px;
   height: 45%;
 }
 
 .message {
   padding-left: 40px;
   padding-right: 40px;
+  font-size: 18px;
 }
 
-/* .searchBtn {
+.chatForm {
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.searchBtn {
+  cursor: pointer;
+  display: flex;
+  margin-left: 16px;
+  border: none;
   margin-right: 12px;
+  background: #343541;
 }
 
 .searchSvg {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
 }
 
 .searchSvg:hover {
   scale: 110%;
   transition-duration: 200ms;
-} */
+}
