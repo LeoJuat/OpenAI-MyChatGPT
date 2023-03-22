@@ -28,10 +28,133 @@ body {
 .App {
   text-align: center;
   display: flex;
+  background-color: #343541;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .sidebar {
-  width: 240px;
-  border: 1px solid white;
-  height: 100vh;
+  width: 260px;
+  padding: 10px;
+  background-color: #202123;
 }
+
+.side-menu-button {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.side-menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: ease 0.25s all;
+}
+
+.side-menu-btn-span {
+  padding-left: 10px;
+  padding-right: 12px;
+}
+
+.chatbox {
+  flex: 1;
+  background-color: #343541;
+  position: relative;
+}
+
+.chat-input-holder {
+  padding: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.textarea {
+  background-color: #40414f;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px;
+  font-size: 1.25em;
+
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-log {
+  text-align: left;
+}
+
+.chat-message.bot {
+  background-color: #444654;
+}
+
+.chat-message-center {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(9, 171, 9);
+  border-radius: 25%;
+  width: 40px;
+  height: 40px;
+}
+
+.avatar.bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(186, 67, 186);
+  border-radius: 25%;
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-img {
+  height: 50%;
+}
+
+.avatar-img.bot {
+  height: 45%;
+}
+
+.message {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* .searchBtn {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.searchSvg {
+  height: 30px;
+  width: 30px;
+}
+
+.searchSvg:hover {
+  scale: 110%;
+  transition-duration: 200ms;
+} */
